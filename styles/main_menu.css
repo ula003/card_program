@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-content: center;
+    align-items: center; */
+}
+header{
+    padding:5px 264px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    align-items: center;
+    .links{
+        display: flex;
+        gap: 20px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
