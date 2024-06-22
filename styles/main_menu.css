@@ -1,22 +1,27 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../gilroy-bold/Gilroy-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: gilroy;
 }
 body{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     /* justify-content: center;
     align-items: center; */
 }
 header{
-    padding:5px 264px;
+    padding:15px 264px;
     display: flex;
     justify-content: space-between;
     background-color: #F0F0F0;
     align-items: center;
+    font-weight: 600;
     .links{
         display: flex;
         gap: 20px;
@@ -25,4 +30,68 @@ header{
             color: black;
         }
     }
+    .account_info{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.welcome{
+    padding:5px 264px;
+    p{
+        color:#0047FF;
+        font-weight: bold;
+    }
+}
+.my_wallets{
+    padding:5px 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .cards{
+        display: flex;
+        gap: 20px;
+    }
+    a{
+        color: #0047FF;
+        font-weight: 600;
+    }
+    
+}
+.last_transactions{
+    padding:0px 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    p{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    a{
+        color: #0047FF;
+        font-weight: 600;
+    }
+}
+table{
+    thead{
+        td{
+            padding-bottom: 20px;
+            color: #B9C0D1;
+        }
+    }
+    tbody{
+       td{
+        border-bottom: 1px solid #B9C0D1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+
+       }
+    }
+    
 }
